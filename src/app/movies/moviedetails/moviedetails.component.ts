@@ -20,7 +20,7 @@ export class MoviedetailsComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.moviesservice.getMovie(this.aroute.snapshot.params['Id']).subscribe((movie) => {
+    this.moviesservice.getMovie(this.aroute.snapshot.params['id']).subscribe((movie) => {
       this.movie = movie;
       console.log(movie.Name);
     })
