@@ -14,7 +14,7 @@ export class MoviedetailsComponent implements OnInit {
   constructor(private moviesservice: MovieService, private aroute: ActivatedRoute) { }
 
   updateMovie(movie){
-    this.moviesservice.updateMovie(movie.Id,movie).subscribe((movie)=>{
+    this.moviesservice.updateMovie(movie.id,movie).subscribe((movie)=>{
       console.log("updated movie");
     })
   }
