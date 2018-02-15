@@ -12,7 +12,7 @@ export const movieroutes:Routes=[
         path:'addmovie',component:AddmovieComponent
     },
     {
-        path:'movies/:Id',component:MoviedetailsComponent
+        path:'movies/:id',component:MoviedetailsComponent
     },
     {
         path:'',redirectTo:'movies',pathMatch:'full'
